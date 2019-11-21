@@ -1,0 +1,12 @@
+name: Seattle-PD--Use-of-Force
+title: Seattle-PD--Use-of-Force
+username:
+account: seattlepduseofforce
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1505195
+bundleId: 2606343
+url: https://seattlepduseofforce.shinyapps.io/Seattle-PD--Use-of-Force/
+when: 1574320026.86838
+asMultiple: FALSE
+asStatic: FALSE

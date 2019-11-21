@@ -6,11 +6,11 @@
 #
 #    http://shiny.rstudio.com/
 #
-
 library(shiny)
-
+library("rsconnect")
+rsconnect::setAccountInfo(name='seattlepduseofforce', token='22CE6C7BA70CAA3A6A649E774E5467DC', secret='7Rew2mYkRXxObvWzSMq8NhMm2kadNU9Io/HMNNy3')
 # Source the visualization code
-source("visualizations.R")
+source("Visualizations.R")
 
 # Define UI for application
 ui <- fluidPage(
@@ -80,7 +80,7 @@ server <- function(input, output) {
     })
 
     output$abtt <- renderUI({
-        get_text_from_md_file("MDfiles/abtt.md")
+        get_text_from_md_file("MDfiles/about.md")
     })
 
     output$abus <- renderUI({
