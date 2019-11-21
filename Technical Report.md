@@ -123,110 +123,33 @@ References
 
 ### **Appendix 1: Data Dictionary**
 
-Variable Name
-Description
-Data Type
-Measurement Type
-Template ID
-Identifier for the specific observation
-ID
-Nominal
-Reported Date
-Date that the observation was reported
-Date
-Interval
-Reported Time
-Time that the observation was reported
-Date
-Interval
-Occurred Date / Time
-When the incident occured
-Date
-Interval
-Call Type
-Method of how the police department was contacted
-String
-Nominal
-Initial Call Type
-What type of incident was occuring as reported by victim
-String
-Nominal
-Final Call Type
-How the incident was categorized by law enforcement
-String
-Nominal
-Disposition
-How the observation was dealt with; final result
-String
-Nominal
-Use of Force Indicator
-Indicates whether force was utilized for that observation
-Boolean
-Nominal
-Subject Veteran Indicator
-Indicates if the subject was a verteran
-Boolean
-Nominal
-CIT Officer Requested
-Indicates if an officer was requested
-Boolean
-Nominal
-CIT Officer Dispatched
-Indicates if an officer was dispatched
-Boolean
-Nominal
-CIT Officer Arrived
-Indicates if a dispatched officer arrived
-Boolean
-Nominal
-Officer ID
-ID belonging to CIT officer responding
-ID
-Nominal
-Officer Gender
-States the gender of the responding officer
-String
-Nominal
-Officer Race
-States the race of the responding officer
-String
-Nominal
-Office Year of Birth
-States the birth year of the responding officer
-Date
- Interval
-Officer Years of Experience
-States the responding officer’s years of experience
-Integer
-Interval
-CIT Certified Indicator
-Indicates if the officer was certified as CIT
-Boolean
-Nominal
-Officer Bureau
-States what bureau the officer belongs to
-String
-Nominal
-Officer Precinct
-States what precinct the officer belongs to
-String
-Nominal
-Officer Squad
-States what squad the officer belongs to
-String
-Nominal
-Precinct
-States what precinct the incident occured in
-String
-Nominal
-Sector
-States sector the incident occured in
-String
-Nominal
-Beat
-States what beat the incident occured in
-String
-Nominal
+**Variable Name**|**Description**|**Data Type**|**Measurement Type**
+:-----:|:-----:|:-----:|:-----:
+Template ID|Identifier for the specific observation|ID|Nominal
+Reported Date|Date that the observation was reported|Date|Interval
+Reported Time|Time that the observation was reported|Date|Interval
+Occurred Date / Time|When the incident occured|Date|Interval
+Call Type|Method of how the police department was contacted|String|Nominal
+Initial Call Type|What type of incident was occuring as reported by victim|String|Nominal
+Final Call Type|How the incident was categorized by law enforcement|String|Nominal
+Disposition|How the observation was dealt with; final result|String|Nominal
+Use of Force Indicator|Indicates whether force was utilized for that observation|Boolean|Nominal
+Subject Veteran Indicator|Indicates if the subject was a verteran|Boolean|Nominal
+CIT Officer Requested|Indicates if an officer was requested|Boolean|Nominal
+CIT Officer Dispatched|Indicates if an officer was dispatched|Boolean|Nominal
+CIT Officer Arrived|Indicates if a dispatched officer arrived|Boolean|Nominal
+Officer ID|ID belonging to CIT officer responding|ID|Nominal
+Officer Gender|States the gender of the responding officer|String|Nominal
+Officer Race|States the race of the responding officer|String|Nominal
+Office Year of Birth|States the birth year of the responding officer|Date|Interval
+Officer Years of Experience|States the responding officer’s years of experience|Integer|Interval
+CIT Certified Indicator|Indicates if the officer was certified as CIT|Boolean|Nominal
+Officer Bureau|States what bureau the officer belongs to|String|Nominal
+Officer Precinct|States what precinct the officer belongs to|String|Nominal
+Officer Squad|States what squad the officer belongs to|String|Nominal
+Precinct|States what precinct the incident occured in|String|Nominal
+Sector|States sector the incident occured in|String|Nominal
+Beat|States what beat the incident occured in|String|Nominal
 
 ### **Appendix 2: Reflections**
 #### Reyan Haji
