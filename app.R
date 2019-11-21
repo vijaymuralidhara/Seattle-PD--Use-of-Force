@@ -8,15 +8,15 @@
 #
 
 library(shiny)
-library(htmltools)
 
+# Source the visualization code
 source("visualizations.R")
 
-# Define UI for application that draws a histogram
+# Define UI for application
 ui <- fluidPage(
 
     titlePanel("Seattle Crime: Use of Force Among Seattle PD"),
-    
+
     tabsetPanel(
         type = "tabs", id = "nav_bar",
         tabPanel(
@@ -34,9 +34,9 @@ ui <- fluidPage(
                                         "Officer Gender" = "gender",
                                         "Officer Per Precinct" = "precinct",
                                         "Officer Years on Force" = "exp_force",
-                                        "Reported Time of Incidences" = "time"), 
+                                        "Reported Time of Incidences" = "time"),
                          selected = "race"),
-            
+
             hr(),
             fluidRow(column(3, plotOutput("rq1", width = "500%")))
         ),
@@ -50,40 +50,40 @@ ui <- fluidPage(
         ),
         tabPanel(
             "About Us",
-            htmlOutput("AbUs")
+            htmlOutput("abus")
         )
     )
 )
 
 
-# Define server logic required to draw a histogram
+# Define server logic
 server <- function(input, output) {
     output$intro <- renderUI({
         get_text_from_md_file("MDfiles/intro.md")})
-    
+
     output$bandr <- renderUI({
         get_text_from_md_file("MDfiles/bandr.md")
     })
-    
+
     output$rq1 <- renderPlot({
         switch(input$graph,
                "race" = plot(bar),
                "precinct" = plot(bar2),
                "gender" = plot(bar3),
                "exp_force" = plot(plot),
-               "time" = plot(plot2))}, 
+               "time" = plot(plot2))},
         height = 400, width = 1100
         )
-    
+
     output$conc <- renderUI({
         get_text_from_md_file("MDfiles/conclusion.md")
     })
-    
+
     output$abtt <- renderUI({
         get_text_from_md_file("MDfiles/abtt.md")
     })
-    
-    output$AbUs <- renderUI({
+
+    output$abus <- renderUI({
         get_text_from_md_file("MDfiles/AbUs.md")
     })
 }
