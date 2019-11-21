@@ -18,4 +18,6 @@ Technical Writer: Kirstie
 1. Adhere to meeting times. <br/>
 2. Communicate effectively about your progress and if you are unable to make a meeting/need to reschedule. <br/>
 3. Upload individual contributions in a timely manner. <br/>
-4. Centralize communication and document storage (google drive and GitHub).
+4. Centralize communication and document storage (google drive and GitHub).  
+
+Link to [Technical report](https://github.com/vijaymuralidhara/Seattle-PD--Use-of-Force/wiki)
