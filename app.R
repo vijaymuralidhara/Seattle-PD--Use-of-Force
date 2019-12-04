@@ -38,7 +38,8 @@ ui <- fluidPage(
                          selected = "race"),
 
             hr(),
-            fluidRow(column(3, plotOutput("rq1", width = "500%")))
+            fluidRow(column(3, plotOutput("rq1", width = "500%"))),
+            fluidRow(column(12, htmlOutput("rq2", width = "500%")))
         ),
         tabPanel(
             "Conclusion",
@@ -74,6 +75,15 @@ server <- function(input, output) {
                "time" = plot(plot2))},
         height = 400, width = 1100
         )
+    
+    output$rq2 <- renderUI({
+        switch(input$graph,
+               "race" = get_text_from_md_file("MDfiles/gc_race.md"),
+               "precinct" = get_text_from_md_file("MDfiles/gc_precinct.md"),
+               "gender" = get_text_from_md_file("MDfiles/gc_gender.md"),
+               "exp_force" = get_text_from_md_file("MDfiles/gc_exp.md"),
+               "time" = get_text_from_md_file("MDfiles/gc_time.md"))}
+    )
 
     output$conc <- renderUI({
         get_text_from_md_file("MDfiles/conclusion.md")
