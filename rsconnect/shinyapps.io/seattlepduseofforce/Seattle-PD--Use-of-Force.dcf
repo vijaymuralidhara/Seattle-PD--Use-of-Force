@@ -5,8 +5,8 @@ account: seattlepduseofforce
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 1505195
-bundleId: 2606343
+bundleId: 2606362
 url: https://seattlepduseofforce.shinyapps.io/Seattle-PD--Use-of-Force/
-when: 1574320026.86838
+when: 1574320866.83145
 asMultiple: FALSE
 asStatic: FALSE
